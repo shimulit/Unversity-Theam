@@ -1,0 +1,399 @@
+/* Default CSS Here */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* <!-- defult font Link Start --> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* <!-- defult font Link END --> */
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 125px;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.container-full:after,
+.container-full:before,
+.container:after,
+.container:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-33 {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-20 {
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-60 {
+    width: 60%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-30 {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+.col-70 {
+    width: 70%;
+    float: left;
+    padding: 0 15px;
+}
+.col-100 {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+.section-padding{
+    padding: 120px 120px;
+}
+
+/* this font Family Name Start */
+font-family: 'Roboto',
+sans-serif;
+/* this font Family Name END */
+
+/* ---------------------> Site  Css Start <----------------- */
+
+/****  1. top-header css start Here *************/
+section{
+    display: inline-block;
+}
+
+.top-header{
+    background-color: #1D1D1D;
+    padding: 10px 0px;
+}
+.number{
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+}
+.social-link{
+    display: inline-block;
+    color: #fff;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.social-link a{
+    color: #B6B6B6;
+    transition: .3s;
+}
+.social-link a:hover{
+    color: brown;
+}
+
+.social-link li{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    margin: 0 5px;
+}
+.login-register{
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    float: right;
+    transition: .3s;
+}
+
+.login-register a:hover{
+    color: brown;
+}
+
+.login-register a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.login-register i{
+    margin-right: 8px;
+}
+
+/* 2. Header Manu Start CSS Here*/
+
+header{
+    padding: 30px 0px;
+}
+
+.logo img{
+    width: 150px;
+}
+.main-manu{
+    list-style: none;
+    float: right;
+    padding: 10px 0;
+}
+.main-manu li{
+    display: inline-block;
+}
+
+.main-manu li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+    transition: .3s;
+    border-bottom: 3px solid transparent;
+}
+.main-manu li a:hover{
+    border-bottom: 3px solid brown;
+  
+}
+.micon{
+    margin-left: 8px !important;
+}
+.micon:hover{
+    border-bottom: 3px solid transparent !important;
+    color: brown;
+}
+.active{
+    border-bottom: 3px solid brown !important;
+}
+/*Header Manu END CSS Here*/
+
+/* Start Home Page CSS START */
+
+.home{
+    background-image: url(../image/asset\ 37.jpeg);
+    padding: 200px 0px;
+    color: #fff;
+}
+.home h1{
+    font-size: 92px;
+    font-weight: 700;
+    position: relative;
+}
+
+.home h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+}
+.home p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 40px 0;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.btn-active{
+    background: #FF1949;
+    border: 2px solid #FF1949;
+}
+
+.btn i{
+    padding-right: 5px;
+    visibility: hidden;
+    transition: .3s;
+}
+.btn:hover i{
+    visibility: visible;
+}
+/* Start Home Page CSS END */
+
+/* 04. Start Course CSS */
+.courses-manu{
+    list-style: none;
+    padding-bottom: 27px;
+}
+.courses-manu li{
+    display: inline;
+    font-size: 17px;
+    color: #252525;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.courses-manu li i{
+    padding-right: 5px;
+    visibility: hidden;
+    transition: 0.3s;
+
+}
+.courses-manu li:hover i{
+    visibility: visible;
+    color: #FF1949;
+}
+.courses-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+.courses-img a{
+    text-decoration: none;
+}
+.cours-cata{
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 14px;
+    background-color: #FF1949;
+}
+.cours-cata:hover{
+    background-color: #000;
+}
+.course-box:hover img{
+        transform: scale(1.1);
+}
+.courses-details h3 a{
+    font-size: 20px;
+    color: #252525;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+.courses-details h3 a:hover{
+    color: #FF1949;
+}
+.instructor{
+    font-size: 15px;
+    color: #252525;
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+.courses-details{
+    font-size: 15px;
+    line-height: 24px;
+    color: #444;
+    text-align: justify;
+}
+.courses-footer{
+    font-size: 13px;
+    padding-top: 18px;
+}
+.courses-footer a{
+    color: #252525;
+    text-decoration: none;
+}
+.rating{
+    margin-left: 25px;
+}
+.courses-fee{
+    float: right;
+    font-size: 20px;
+    color: #FF1949 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+.courses-details h3{
+    
+}
+.instructor::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    background:#FF1949;
+    height: 3px;
+    width: 50px;
+}
+/* Start Expert Part CSS */
+.expartbox{
+    width: 100%;
+    height: 430px;
+    background-color: #ddd;
+}
+
+.expartbox{
+    padding: 120px 0px 0px 250px;
+    color: #fff;
+}
+.expartbox h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.expartbox a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+.expart-box-four h3,
+.expart-box-four a{
+    color: #FE1949;
+}
+
+.expart-box-one{
+    background-color: #FE1949;
+}
+.expart-box-two{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/asset\ 40.jpeg);
+
+}
+.expart-box-three{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/asset\ 42.jpeg);
+
+}
+.expart-box-four{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/asset\ 41.jpeg);
+}
+.expert .col-50{
+    padding: 0;
+}
+/* Start Expert Part CSS END */
